@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff7fb;
+}
+
+header {
+    background-color: #d86b9b;
+    padding: 20px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #ffe1ed, #f8c4da);
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    color: #a83d6d;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+button {
+    border: none;
+    background-color: #b84779;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #91345f;
+}
+
+#message {
+    margin-top: 20px;
+    color: #a83d6d;
+    font-weight: bold;
+}
+
+section {
+    padding: 70px 8%;
+}
+
+section h2 {
+    text-align: center;
+    color: #a83d6d;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.about {
+    background-color: white;
+    text-align: center;
+}
+
+.about p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 18px;
+}
+
+.services {
+    background-color: #fff0f6;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+    color: #b84779;
+    margin-bottom: 15px;
+}
+
+.contact {
+    background-color: white;
+    text-align: center;
+}
+
+.contact p {
+    margin: 10px;
+}
+
+footer {
+    background-color: #d86b9b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Адаптация для телефона */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .hero h2 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 50px 20px;
+    }
+}
